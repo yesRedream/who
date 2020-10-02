@@ -1,0 +1,82 @@
+
+$orange-dark: #E87928
+$orange: #FF8B37
+$orange-light: #FFAC70
+$orange-lighter: #FFF3EB
+
+$green: #47D867
+$green-lighter: #E6FAEA
+
+$red: #EC6259
+$red-lighter: #FDEEED
+
+$black: #1C1C21
+$gray: #D0D0D8
+$gray-light: #F5F5F7
+$white: #ffffff
+
+body
+    font-family: 'Inter', sans-serif
+    margin: 0
+    padding: 0
+
+h1,
+h2
+    margin: 20px 0
+    font-family: 'Inter', sans-serif
+    font-weight: 600
+    color: $black
+
+h1
+    font-size: 56px
+    line-height: 65px
+
+h2
+    font-size: 32px
+    line-height: 37px
+
+p
+    font-family: 'Inter', sans-serif
+    font-size: 20px
+    font-weight: 400
+    line-height: 23px
+
+.btn
+    box-sizing: border-box
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0
+    padding: 10px
+    min-width: 296px
+    width: 296px
+    height: 64px
+    border: none
+    border-radius: 12px
+    overflow: visible
+    background-color: #FF8B37
+    color: #ffffff
+    outline: none
+    font-family: 'Inter', sans-serif
+    font-weight: 600
+    font-size: 20px
+    cursor: pointer
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+    &:hover
+        background-color: #FFAC70
+
+    &:active
+        background-color: #E87928
+
+@media only screen and (max-width: 992px)
+    .btn
+        min-width: 288px
+        width: 288px
+        height: 48px
+
+        &:hover
+            background-color:  #FF8B37
+
+        &:active
+            background-color: #E87928

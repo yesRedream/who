@@ -1,0 +1,152 @@
+{
+    "prize": [
+            "500",
+            "1,000",
+            "2,000",
+            "4,000",
+            "8,000",
+            "16,000",
+            "32,000",
+            "64,000",
+            "125,000",
+            "250,000",
+            "500,000",
+            "1,000,000"
+    ],
+    "questions": [
+      {
+        "id": 1,
+        "question": "Who Did Kanye Steal The Mic From At The VMAs In 2009??",
+        "answers": [
+          "Lady Gaga",
+          "Taylor Swift",
+          "Katty Perry",
+          "Serebro"
+        ],
+        "rightAnswer": "Taylor Swift"
+      },
+      {
+        "id": 2,
+        "question": "Who has the most subscribers on youtube in the world?",
+        "answers": [
+          "PewDiePie",
+          "T-Series",
+          "EeOneGuy",
+          "Mister Max",
+          "Whait, 5 answers?"
+        ],
+        "rightAnswer": "T-Series"
+      },
+      {
+        "id": 3,
+        "question": "How many zeros are there in the number one thousand?",
+        "answers": [
+          "1",
+          "2",
+          "3",
+          "6"
+        ],
+        "rightAnswer": "3"
+      },
+      {
+        "id": 4,
+        "question": "Paris is the capital city of which country?",
+        "answers": [
+          "Ukraine",
+          "Australia",
+          "France",
+          "Egypt"
+        ],
+        "rightAnswer": "France"
+      },
+      {
+        "id": 5,
+        "question": "In what country are the pyramids?",
+        "answers": [
+          "Egypt",
+          "Russia",
+          "Ukraine",
+          "Madagaskar"
+        ],
+        "rightAnswer": "Egypt"
+      },
+      {
+        "id": 6,
+        "question": "How many colours are there in the rainbow?",
+        "answers": [
+          "3",
+          "5",
+          "9",
+          "7",
+          "4"
+        ],
+        "rightAnswer": "7"
+      },
+      {
+        "id": 7,
+        "question": "What does water turn into when it is frozen solid?",
+        "answers": [
+          "air",
+          "Pepsi",
+          "Ice",
+          "What?"
+        ],
+        "rightAnswer": "Ice"
+      },
+      {
+        "id": 8,
+        "question": "How many days are in a week?",
+        "answers": [
+          "6",
+          "5",
+          "Saturday and Friday",
+          "7"
+        ],
+        "rightAnswer": "7"
+      },
+      {
+        "id": 9,
+        "question": "Who sign 'Mask Off'?",
+        "answers": [
+          "Future",
+          "Past",
+          "Metro Boomin",
+          "UnoTheActivist"
+        ],
+        "rightAnswer": "Future"
+      },
+      {
+        "id": 10,
+        "question": "What planet is closest to the sun?",
+        "answers": [
+          "Mars",
+          "Mercury",
+          "Sneakers",
+          "Earth"
+        ],
+        "rightAnswer": "Mercury"
+      },
+      {
+        "id": 11,
+        "question": "How many sides does a hexagon have?",
+        "answers": [
+          "6",
+          "2",
+          "1",
+          "10"
+        ],
+        "rightAnswer": "6"
+      },
+      {
+        "id": 12,
+        "question": "What is the best cartoon in the world?",
+        "answers": [
+          "Big Baby Boss",
+          "Bolt",
+          "Simba",
+          "Shrek"
+        ],
+        "rightAnswer": "Shrek"
+      }
+    ]
+  }

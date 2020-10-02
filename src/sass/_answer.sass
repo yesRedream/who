@@ -1,0 +1,75 @@
+.answer-wrap
+    position: relative
+    width: 371.77px
+    cursor: pointer
+    margin: 0 17px 32px 17px
+
+    &::before,
+    &::after
+        content: ""
+        display: block
+        height: 1px
+        width: 18px
+        position: absolute
+        top: 47%
+        background-color: $gray
+
+    &::before
+        left: -17px
+        
+    &::after
+        right: -18px
+
+    &:hover 
+        svg path
+            stroke: $orange
+
+        &::before,
+        &::after
+            background-color: $orange
+
+    &.selected
+        svg path
+            stroke: $orange
+            fill: $orange-lighter
+
+        &::before,
+        &::after
+            background-color: $orange
+
+    &.correct
+        svg path
+            stroke: $green
+            fill: $green-lighter
+
+        &::before,
+        &::after
+            background-color: $green
+
+    &.wrong
+        svg path
+            stroke: $red
+            fill: $red-lighter
+
+        &::before,
+        &::after
+            background-color: $red
+
+
+    svg path
+        transition: 0.3s
+
+    .answer-content
+        margin: 0
+        position: absolute
+        top: 25px
+        left: 32px
+
+        
+
+    .letter
+        font-weight: 600
+        color: $orange
+        margin-right: 8px
+
+        
