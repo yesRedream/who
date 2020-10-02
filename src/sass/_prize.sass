@@ -5,6 +5,26 @@
     justify-content: center
     margin-bottom: 7px
 
+    &.current
+        svg path
+            stroke: $orange
+
+        .prize-content
+            color: $orange
+
+        .line
+            background-color: $orange
+
+    &.riched
+        svg path
+            stroke: $gray
+
+        .prize-content
+            color: $gray
+
+        .line
+            background-color: $gray
+
     .prize-content
         position: absolute
         margin: 0
@@ -25,3 +45,31 @@
 
     .prize-svg-wrap
         z-index: 2
+        
+.scale
+    animation-name: scale
+    animation-duration: 1.5s
+
+
+@keyframes scale
+    0%
+        transform: scale(1)
+    50%
+        transform: scale(1.2)
+    100%
+        transform: scale(1)
+
+.fade 
+    animation-name: fade
+    animation-duration: 1.5s
+
+
+@keyframes fade 
+    from
+        // opacity: 0.1;
+        transform: translateY(-5%)
+    
+    to 
+        opacity: 1
+        transform: translateY(0)
+    

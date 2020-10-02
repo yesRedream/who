@@ -1,30 +1,51 @@
 import React, { useState, useEffect } from 'react';
 
 
-export default function Answer({answer, letter, currensAnswer, onSelect}) {
+export default function Answer({answer, letter, currensAnswer, onSelect, disableButtons, }) {
   const [status, setStatus] = useState('');
-
- 
-
+  // const [correctAnswers, setCorrectAnswers] = useState(currensAnswer.length);
 
   const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
+
+
+
   async function handleClick() {
+    disableButtons();
     setStatus('selected');
-    await delay(2000);
-    if (answer === currensAnswer) {
+    await delay(700);
+    // if (answer === currensAnswer) {
+    if (currensAnswer.includes(answer)) {
       setStatus('correct');
     } else {
       setStatus('wrong');
     }
-    await delay(2000);
+    await delay(1000);
     onSelect(answer);
     setStatus('');
-      
+    // let correctAnswers = currensAnswer.length;
+
+    // setStatus('selected');
+    // if (correctAnswers < 2) {
+    //   disableButtons();
+    // }
+    // await delay(700);
+    // if (currensAnswer.includes(answer)) {
+    //   setStatus('correct');
+    //   correctAnswers= correctAnswers - 1;
+    //   console.log(correctAnswers);
+    //   if (correctAnswers === 0) {
+    //     console.log(correctAnswers);
+  
+    //     await delay(1000);
+    //     onSelect(answer);
+    //     setStatus('');
+    //   }
+
+    // } else {
+    //   setStatus('wrong');
+    // }
   }
-
-
-    
 
   return (
       <div className={`answer-wrap ${status}`} onClick={handleClick}>

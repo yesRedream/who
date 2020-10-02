@@ -12,8 +12,10 @@ function shuffle(a) {
 }
 
 export default function Quiz() {
-  const [currentIndex, setCurrentIndex] = useState(config.questions.length - 1);
+  const [currentIndex, setCurrentIndex] = useState(0);
   const [question, setQuestion] = useState(currentIndex);
+  const [disabledBtns, setDisabledBtns] = useState('');
+
   const quiestionsArray = useMemo(() => {
     return shuffle(config.questions);
   }, []);
@@ -26,36 +28,49 @@ export default function Quiz() {
   const prize = config.prize;
 
 
+
   useEffect(() => {
-    setQuestion(currentIndex);  
+    setQuestion(currentIndex); 
   }, [currentIndex]);
 
 
   function nextQuestion() {
-    if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+    if (currentIndex < config.questions.length - 1) {
+      setCurrentIndex(currentIndex + 1);
     } else {
 
     }
   }
 
   function checkAnswer(answer) {
-    if (answer === currentQuestion.rightAnswer) {
+    // if (answer === currentQuestion.rightAnswer) {
+    if (currentQuestion.rightAnswer.includes(answer)) {
       nextQuestion();
     }
   }
+
+  const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+  async function disableButtons() {
+    setDisabledBtns('disabled');
+    await delay(1700);
+    setDisabledBtns('');
+  }
+
+
 
 
   return (
       <div className="quiz-wrap">
           <div className="quiz">
             <h2 key={currentQuestion.id} onClick={nextQuestion} className="question">{currentQuestion.question}</h2>
-            <div className="answers-wrap">
+            <div className={`answers-wrap ${disabledBtns}`}>
               {currensAnswers.map((answer, i) =>
                 <Answer key={i}
                         letter={alphabet[i]}
                         answer={answer}
                         currensAnswer={currensAnswer}
+                        disableButtons={disableButtons}
                         onSelect={checkAnswer}
                 />
               )}
@@ -65,6 +80,8 @@ export default function Quiz() {
             {prize.map((prize, i) =>
               <Prize key={i} 
                      prize={prize}
+                     currentIndex={currentIndex}
+                     prizeIndex={i}
               />
             )}
           </div>

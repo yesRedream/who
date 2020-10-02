@@ -23,7 +23,9 @@
           "Katty Perry",
           "Serebro"
         ],
-        "rightAnswer": "Taylor Swift"
+        "rightAnswer": [
+          "Taylor Swift"
+        ]
       },
       {
         "id": 2,
@@ -35,7 +37,9 @@
           "Mister Max",
           "Whait, 5 answers?"
         ],
-        "rightAnswer": "T-Series"
+        "rightAnswer": [
+          "T-Series"
+        ]
       },
       {
         "id": 3,
@@ -46,7 +50,9 @@
           "3",
           "6"
         ],
-        "rightAnswer": "3"
+        "rightAnswer": [
+          "3"
+        ]
       },
       {
         "id": 4,
@@ -57,7 +63,9 @@
           "France",
           "Egypt"
         ],
-        "rightAnswer": "France"
+        "rightAnswer": [
+          "France"
+        ]
       },
       {
         "id": 5,
@@ -68,7 +76,9 @@
           "Ukraine",
           "Madagaskar"
         ],
-        "rightAnswer": "Egypt"
+        "rightAnswer": [
+          "Egypt"
+        ]
       },
       {
         "id": 6,
@@ -80,7 +90,9 @@
           "7",
           "4"
         ],
-        "rightAnswer": "7"
+        "rightAnswer": [
+          "7"
+        ]
       },
       {
         "id": 7,
@@ -91,7 +103,9 @@
           "Ice",
           "What?"
         ],
-        "rightAnswer": "Ice"
+        "rightAnswer": [
+          "Ice"
+        ]
       },
       {
         "id": 8,
@@ -102,18 +116,22 @@
           "Saturday and Friday",
           "7"
         ],
-        "rightAnswer": "7"
+        "rightAnswer": [
+          "7"
+        ]
       },
       {
         "id": 9,
-        "question": "Who sign 'Mask Off'?",
+        "question": "Who sings 'Mask Off'?",
         "answers": [
           "Future",
           "Past",
           "Metro Boomin",
           "UnoTheActivist"
         ],
-        "rightAnswer": "Future"
+        "rightAnswer": [
+          "Future"
+        ]
       },
       {
         "id": 10,
@@ -124,18 +142,24 @@
           "Sneakers",
           "Earth"
         ],
-        "rightAnswer": "Mercury"
+        "rightAnswer": [
+          "Mercury"
+        ]
       },
       {
         "id": 11,
-        "question": "How many sides does a hexagon have?",
+        "question": "Chose animals",
         "answers": [
-          "6",
-          "2",
-          "1",
-          "10"
+          "Cat",
+          "Hot-dog",
+          "Wolf",
+          "Rat"
         ],
-        "rightAnswer": "6"
+        "rightAnswer": [
+          "Cat",
+          "Wolf",
+          "Rat"
+        ]
       },
       {
         "id": 12,
@@ -146,7 +170,9 @@
           "Simba",
           "Shrek"
         ],
-        "rightAnswer": "Shrek"
+        "rightAnswer": [
+          "Shrek"
+        ]
       }
     ]
   }
