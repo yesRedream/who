@@ -5,7 +5,13 @@
     justify-content: center
     margin-bottom: 7px
 
+    svg
+        &:last-child
+            display: none
+
     &.current
+        
+
         svg path
             stroke: $orange
 
@@ -46,30 +52,11 @@
     .prize-svg-wrap
         z-index: 2
         
-.scale
-    animation-name: scale
-    animation-duration: 1.5s
+@media only screen and (max-width: 480px)
+    .prize
+        svg
+            &:last-child
+                display: block
 
-
-@keyframes scale
-    0%
-        transform: scale(1)
-    50%
-        transform: scale(1.2)
-    100%
-        transform: scale(1)
-
-.fade 
-    animation-name: fade
-    animation-duration: 1.5s
-
-
-@keyframes fade 
-    from
-        // opacity: 0.1;
-        transform: translateY(-5%)
-    
-    to 
-        opacity: 1
-        transform: translateY(0)
-    
+            &:first-child
+                display: none

@@ -1,31 +1,82 @@
+.answer-disable
+    position: relative
+    &.correct
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            top: 0
+            bottom: 0
+            left: -17px
+            right: -17px
+            z-index: 10
+            background: transparent
+    
 .answer-wrap
     position: relative
     width: 371.77px
     cursor: pointer
     margin: 0 17px 32px 17px
+    z-index: 2
 
-    &::before,
-    &::after
+    .answer-block
+        display: block
+        position: absolute
+        top: 0
+        left: -18px
+        right: -18px
+        bottom: 0
+        z-index: 10
+
+
+    .line
+        display: none
+        position: absolute
+        top: 50%
+        width: 100%
+        height: 1px
+        background-color: $gray
+        z-index: 1
+        transition: 0.3s
+
+    &::before
         content: ""
         display: block
         height: 1px
-        width: 18px
+        width: 405px
         position: absolute
         top: 47%
-        background-color: $gray
-
-    &::before
         left: -17px
+        background-color: $gray
+        transition: 0.3s
+        z-index: -1
+
+    
+
+
+
+    // &::before,
+    // &::after
+    //     content: ""
+    //     display: block
+    //     height: 1px
+    //     width: 18px
+    //     position: absolute
+    //     top: 47%
+    //     background-color: $gray
+    //     transition: 0.3s
+
+    // &::before
+    //     left: -17px
         
-    &::after
-        right: -18px
+    // &::after
+    //     right: -18px
 
     &:hover 
         svg path
             stroke: $orange
 
-        &::before,
-        &::after
+        &::before
             background-color: $orange
 
     &.selected
@@ -33,17 +84,21 @@
             stroke: $orange
             fill: $orange-lighter
 
-        &::before,
-        &::after
+        &::before
             background-color: $orange
 
+        .line
+            background-color: $orange
+        
     &.correct
         svg path
             stroke: $green
             fill: $green-lighter
 
-        &::before,
-        &::after
+        &::before
+            background-color: $green
+
+        .line
             background-color: $green
 
     &.wrong
@@ -51,21 +106,28 @@
             stroke: $red
             fill: $red-lighter
 
-        &::before,
-        &::after
+        &::before
             background-color: $red
-
+        
+        .line
+            background-color: $red
 
     svg path
         transition: 0.3s
+
+    svg
+        &:last-child
+            display: none
 
     .answer-content
         margin: 0
         position: absolute
         top: 25px
         left: 32px
-
-        
+        width: 330px
+        text-overflow: ellipsis
+        overflow: hidden
+        white-space: nowrap
 
     .letter
         font-weight: 600
@@ -73,3 +135,35 @@
         margin-right: 8px
 
         
+@media only screen and (max-width: 480px)
+    .answer-wrap
+        margin-top: 8px
+        margin-bottom: 0
+        margin-left: 0
+        margin-right: 0
+        width: 100%
+        display: flex
+        justify-content: center
+
+        .svg-wrap
+            z-index: 1
+
+        .answer-content
+            width: 240px
+            top: 31%
+            left: calc(50% - 120px)
+            z-index: 3
+
+
+        .line
+            display: block
+
+        &::before
+            display: none
+
+        svg
+            &:last-child
+                display: block
+
+            &:first-child
+                display: none

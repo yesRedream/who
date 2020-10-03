@@ -173,6 +173,38 @@
         "rightAnswer": [
           "Shrek"
         ]
+      },
+      {
+        "id": 13,
+        "question": "Chose food",
+        "answers": [
+          "Potato",
+          "Tomato",
+          "Cheese",
+          "Computer",
+          "Apple",
+          "iPhone"
+        ],
+        "rightAnswer": [
+          "Potato",
+          "Tomato",
+          "Cheese",
+          "Apple"
+        ]
+      },
+      {
+        "id": 14,
+        "question": "Chose drink",
+        "answers": [
+          "Milk",
+          "Candy",
+          "Blood",
+          "Water"
+        ],
+        "rightAnswer": [
+          "Milk",
+          "Water"
+        ]
       }
     ]
   }
