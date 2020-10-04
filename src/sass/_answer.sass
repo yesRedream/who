@@ -81,7 +81,7 @@
 
     &.selected
         svg path
-            stroke: $orange
+            stroke: $orange !important
             fill: $orange-lighter
 
         &::before
@@ -92,7 +92,7 @@
         
     &.correct
         svg path
-            stroke: $green
+            stroke: $green !important
             fill: $green-lighter
 
         &::before
@@ -103,7 +103,7 @@
 
     &.wrong
         svg path
-            stroke: $red
+            stroke: $red !important
             fill: $red-lighter
 
         &::before
@@ -160,6 +160,10 @@
 
         .line
             display: block
+
+        &:hover 
+            svg path
+                stroke: $gray
 
         &::before
             display: none

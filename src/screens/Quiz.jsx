@@ -112,7 +112,7 @@ export default function Quiz() {
         </div>
 
         <div className="quiz">
-          <h2 key={currentQuestion.id} onClick={nextQuestion} className="question">{currentQuestion.question}</h2>
+          <h2 key={currentQuestion.id} className="question">{currentQuestion.question}</h2>
           <div className={`answers-wrap ${disabledBtns}`}>
             {currensAnswers.map((answer, i) =>
               <Answer key={i}
