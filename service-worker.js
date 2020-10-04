@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "//yesredream.github.io/who/precache-manifest.e5b91002a9be9f27896b0b44e3d1f6cc.js"
+  "//yesredream.github.io/who/precache-manifest.983fc9723177c2fbf8adb51b6e44686a.js"
 );
 
 self.addEventListener('message', (event) => {
